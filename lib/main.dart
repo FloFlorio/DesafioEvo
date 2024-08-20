@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: Size(600, 900), // Tamanho da tela de design, ajuste conforme necessário
+      designSize: Size(600, 900),
       builder: (context, child) => MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(

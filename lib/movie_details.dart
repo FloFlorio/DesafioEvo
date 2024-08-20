@@ -20,7 +20,7 @@ class MovieDetailsPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(movie.title),
       ),
-      backgroundColor: const Color.fromARGB(255, 36, 36, 44),
+      backgroundColor: const Color.fromARGB(255, 20, 20, 20),
       body: Padding(
         padding: const EdgeInsets.all(32.0),
         child: SingleChildScrollView(
@@ -30,15 +30,15 @@ class MovieDetailsPage extends StatelessWidget {
               if (movie.posterPath != null)
                 Image.network(
                   'https://image.tmdb.org/t/p/w500${movie.posterPath}',
-                  width: screenWidth * 0.2,
-                  height: 500,
+                  width: screenWidth * 0.22,
+                  height: screenWidth * 0.34,
                 ),
               SizedBox(width: 32),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SizedBox(height: 34),
+                    SizedBox(height: 24),
                     Text(
                       movie.title,
                       style: Theme.of(context).textTheme.headlineMedium,

@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'movie_model.dart';
 
 class ApiService {
-  final String apiKey = 'b60328e181e925b7ebead7cdc9a18489';
+  final String apiKey = 'API_KEY'; //Set you're API Key here!
   final String baseUrl = 'https://api.themoviedb.org/3';
 
   Future<List<Movie>> searchMovies(String query) async {
